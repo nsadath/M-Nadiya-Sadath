@@ -5,8 +5,8 @@
 	display: grid;
 	grid-template-columns: repeat(var(--columns-row), 1fr);
 	grid-template-rows: repeat(var(--columns-row), 1fr);
-	width: 500px;
-	height: 500px;
+	/* width: 500px; */
+	/* height: 500px; */
 }
 
  body {
@@ -77,12 +77,11 @@ border-bottom: 4px solid #72C3DC;
 .shuffletext {
 	text-align: right;
 	font-size: 13px;
-	padding-top: 100px;
-    margin-right: 427px;
+	margin-right: 60px;
+	/* padding-top: 100px; */
 }
 
 .heading {
-
     font-weight: 400;
     text-align: center;
     margin: 10px;
@@ -102,6 +101,7 @@ padding: 10px;
 		width: auto;
 		position: relative;
 		top: 60px;
+		padding-bottom: 10px;
 	}
 	.grid-item {
 		background-color: #EFEFEF !important;
@@ -133,11 +133,7 @@ padding: 10px;
 .grid-container .grid-item:nth-child(6),.grid-container .grid-item:nth-child(7){
     border-left: 6px solid #BFBFBF;
 }
-.shuffletext {
-    text-align: center;
-    margin-right: 0px;
-    padding-bottom: 40px;
-}
+
 .heading {
     margin: 0px;
     background-color: #000;
@@ -148,11 +144,20 @@ padding: 10px;
 }
 
 @media (max-width: 670px) {
-	.grid-container {
+	body {
+		overflow-x:hidden;
+	}
+	#container.grid-container {
 		display: block;
+		height: auto;
 	}
 
 	.btn_blue {
 		width: 100px;
+	}
+	.shuffletext {
+		text-align: center;
+		margin-right: 0px;
+		margin-bottom: 20px;
 	}
 }
